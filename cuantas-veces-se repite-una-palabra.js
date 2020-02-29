@@ -1,15 +1,9 @@
-/**
- * Cuámtas veces se repite una palabra en una frase
- * 
+ * Cuántas veces se repite una palabra en una frase?
+ *
  * Entrada: Frase, palabra que se repite
  * Salida: número de veces que se repite la palabra
- */
-
-function howManyTimes (phrase, word) {
-  const phraseArr = phrase.split(' ');
-  let temp = 0;
-  phraseArr.map(w => {
-      if (w === word) return temp++
-  })
-  return temp;
+*/
+function repeat(phrase, word){
+    return (phrase.split(word).length-1);
 }
+console.log(repeat("Hola GranMundoMundial","a"));
